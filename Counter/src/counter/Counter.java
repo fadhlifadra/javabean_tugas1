@@ -13,7 +13,7 @@ import java.awt.*;
 public class Counter extends Panel {
     private long count=0;
     private Label label;
-    private long maxValue=50;
+    private long maxValue=500;
     public void setMaxValue(long max) {
         maxValue = max;
     }
@@ -32,5 +32,13 @@ public class Counter extends Panel {
             label.setText(" "+count+" ");
         }
         else label.setText("!!");
+    }
+    
+    public void setValue(long value){
+        count = value;
+    }
+    
+    public long getValue(){
+        return count;
     }
 }
